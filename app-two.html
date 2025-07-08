@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       header{
+            text-align: end;
+            border: 1px solid black;
+            background-color:black;
+            color: white;
+        }
+
+        img{
+            position: fixed;
+            right: 90%;
+            top: 1%;
+            border: 1px solid black;
+        }
+        nav{
+            border: 1px solid black;
+            background-color:grey;
+        }
+        
+        ul{
+            border: 0px solid black;
+            
+            
+        }
+        li{
+            list-style: none;
+            display: inline-flex;
+            margin-left: 3%;
+            flex-direction: row;
+            
+            
+            
+        }
+        a{
+            border: 0px solid black;
+        }
+         table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    footer{
+        border: 1px solid black;
+        background-color: grey;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="ab">PRODUCTO</h1>
+        <img  width="70px" height="80px"  src="https://tse1.mm.bing.net/th/id/OIP.plxYIjq2UEzRiVchom22XgHaHa?pid=Api&P=0&h=180">
+        
+    </header>
+    <section>
+    <nav>
+        <ul>
+            <li><a href="#Home"></a>Home</li>
+            <li><a href="#Products"></a>Products</li>
+            <li><a href="#About"></a>About</li>
+        </ul>
+    </nav>
+    </section>
+    <form action="">
+        <h1>Product form</h1>
+        <input type="text" name="Product ID" placeholder="Product ID" required=true>
+        <input type="text" name="Product Name" placeholder="Product Name" required=true>
+        <input type="text" name="Price" placeholder="Price" required=true>
+        <input type="text" name="Qty" placeholder="Qty" required=true>
+        <input type="submit" value="Add product" placeholder="Add product" required=true><br><br>
+        <input type="submit" value="Display Products" placeholder="Display Products" required=true>
+    </form>
+
+    <table id="product-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="product-body"></tbody>
+  </table>
+  <footer>
+    <h1>@2025 PRODUCTO Inc.</h1>
+  </footer>
+
+
+
+</body>
+</html>
